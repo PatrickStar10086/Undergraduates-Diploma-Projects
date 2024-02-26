@@ -1,0 +1,49 @@
+{
+	"pages": [{
+			"path": "pages/sousuoye/sousuoye",
+			"style": {
+				"navigationBarTitleText": "搜索页"
+			}
+		},{
+			"path": "pages/xiangqingye/xiangqingye",
+			"style": {
+				"navigationBarTitleText": "详情页"
+			}
+		}
+		, {
+			"path": "pages/first/first",
+			"style": {}
+		}, {
+			"path": "pages/index/index",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#832146",
+		"selectedColor": "#1206c5",
+		"borderStyle": "black",
+		"backgroundColor": "#ffc5eb",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/2.jpg",
+			"selectedIconPath": "static/2.jpg",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/sousuoye/sousuoye",
+			"iconPath": "static/2.jpg",
+			"selectedIconPath": "static/2.jpg",
+			"text": "搜索页"
+		}, {
+			"pagePath": "pages/first/first",
+			"iconPath": "static/2.jpg",
+			"selectedIconPath": "static/2.jpg",
+			"text": "详情页"
+		}]
+	}
+}

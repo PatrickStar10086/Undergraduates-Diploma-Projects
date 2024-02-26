@@ -1,0 +1,84 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		//定义登录页面
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		//定义注册页面
+		{
+			"path": "pages/regist/regist",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		//定义菜单栏页面
+		{
+			"path": "pages/htmenu/htmenu",
+			"style": {
+				"navigationBarTitleText": "菜单栏"
+			}
+		},
+		//生成管理景点页面
+		{
+			"path": "pages/scenicspotmanage/scenicspotmanage",
+			"style": {
+				"navigationBarTitleText": "景点管理"
+			}
+		},
+		{
+			"path": "pages/scenicspotview/scenicspotview",
+			"style": {
+				"navigationBarTitleText": "景点推荐"
+			}
+		},
+		{
+			"path": "pages/userindex/userindex",
+			"style": {
+				"navigationBarTitleText": "用户个人信息"
+			}
+		},
+		{
+			"path": "pages/historyview/historyview",
+			"style": {
+				"navigationBarTitleText": "浏览历史"
+			}
+		},
+		{
+			"path": "pages/scenicspotxiangqing/scenicspotxiangqing",
+			"style": {
+				"navigationBarTitleText": "景点详情"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "电影购票",
+		"navigationBarBackgroundColor": "#e54847",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#696969",
+		"selectedColor": "#f03d37",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/scenicspotmanage/scenicspotmanage",
+			"iconPath": "static/shouye.png",
+			"selectedIconPath": "static/shouye.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/scenicspotview/scenicspotview",
+			"iconPath": "static/tuijian.png",
+			"selectedIconPath": "static/tuijian.png",
+			"text": "推荐"
+		}, {
+			"pagePath": "pages/htmenu/htmenu",
+			"iconPath": "static/个人.png",
+			"selectedIconPath": "static/个人.png",
+			"text": "个人中心"
+		}]
+	}
+}

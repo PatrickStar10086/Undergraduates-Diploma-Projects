@@ -1,0 +1,9 @@
+
+page {
+	background-color: RGB(231, 231, 233);
+}
+.an {
+	text-align: center;
+	padding: 5px;
+}
+

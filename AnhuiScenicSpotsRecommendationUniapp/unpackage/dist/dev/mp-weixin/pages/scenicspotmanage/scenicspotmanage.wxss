@@ -1,0 +1,61 @@
+
+page {
+	background-color: #f5f5f5;
+}
+.liebiao .liebiao-item {
+	border-bottom: 1px solid #e6e6e6;
+	padding: 10px;
+	height: 90px;
+}
+.liebiao .liebiao-item .liebiao-item-com2 {
+	float: left;
+	width: 65%;
+	margin-left: 5%;
+}
+.liebiao .xiaowenzi {
+	height: 69px;
+	font-size: 13px;
+	color: #666;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.liebiao .liebiao-item .liebiao-item-com3 {
+	float: left;
+	width: 25%;
+	margin-left: 5%;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
+}
+.liebiao .btn {
+	width: 47px;
+	height: 27px;
+	line-height: 28px;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: #f03d37;
+	color: #fff;
+	border-radius: 4px;
+	white-space: nowrap;
+	font-size: 12px;
+	cursor: pointer;
+}
+.liebiao .liebiao-item .liebiao-item-com1 .img {
+	width: 100%;
+	height: 90px;
+}
+.liebiao .liebiao-item .title {
+	font-size: 17px;
+	color: #333;
+	font-weight: 700;
+	padding-right: 5px;
+	flex-shrink: 1;
+}
+.liebiao .pingfen {
+	font-weight: 700;
+	color: #faaf00;
+	font-size: 15px;
+	display: inline-block;
+}
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<title>选择文件</title>
+		<script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.1.js"></script>
+		<script type="text/javascript" src="js/h5uploader.js"></script>
+	</head>
+
+	<body>
+		<input type="file" name="file" id="fileInputElement" style="display: none;" onchange="filechange()"/>
+		<button type="primary" onclick="shangchuan()" id="xzbtn">选择文件</button>
+	</body>
+	
+	<style type="text/css">
+		#xzbtn{
+			position: relative;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 14px;
+			padding-right: 14px;
+			box-sizing: border-box;
+			font-size: 18px;
+			text-align: center;
+			text-decoration: none;
+			line-height: 2.55555556;
+			border-radius: 5px;
+			-webkit-tap-highlight-color: transparent;
+			overflow: hidden;
+			color: #fff;
+			background-color: #1aad19;
+			border: none;
+			margin-top: 50%;
+			transform:translateY(50%);
+		}
+		
+		button::after {
+		user agent stylesheetcontent: " ";
+		width: 200%;
+		height: 200%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 1px solid rgba(0,0,0,.2);
+		-webkit-transform: scale(.5);
+		transform: scale(.5);
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+		box-sizing: border-box;
+		border-radius: 10px;
+		
+		}
+
+		
+	</style>
+	
+	<script type="text/javascript">
+		
+		function filechange(){
+			var wenjian = document.getElementById("fileInputElement").value;
+			
+			if(wenjian){
+				H5Uploader.upload({
+					action: 'http://192.168.101.65:8080/minghuapaimai/addfilejson.action',
+					id: 'fileInputElement',
+					success: function(data) {
+						console.log(data);
+						
+						uni.postMessage({
+							data: {
+								url: data
+							}
+						});
+						
+						uni.navigateBack({  //uni.navigateTo跳转的返回，默认1为返回上一级
+							delta: 1
+						});
+						
+					},
+					fail: function(data) {
+						console.log(data);
+					}
+				});
+			}
+			
+		}
+		
+		
+		function shangchuan(){
+			
+			document.getElementById('fileInputElement').click();
+			
+		}
+		
+		
+		
+	</script>
+	
+</html>

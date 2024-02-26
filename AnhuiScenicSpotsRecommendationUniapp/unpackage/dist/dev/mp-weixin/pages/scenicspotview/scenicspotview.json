@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "景点推荐",
+  "usingComponents": {
+    "uni-search-bar": "/components/uni-search-bar/uni-search-bar"
+  }
+}

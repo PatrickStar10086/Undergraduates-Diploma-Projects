@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/regist/regist",
+    "pages/htmenu/htmenu",
+    "pages/scenicspotmanage/scenicspotmanage",
+    "pages/scenicspotview/scenicspotview",
+    "pages/userindex/userindex",
+    "pages/historyview/historyview",
+    "pages/scenicspotxiangqing/scenicspotxiangqing"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "电影购票",
+    "navigationBarBackgroundColor": "#e54847",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#696969",
+    "selectedColor": "#f03d37",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/scenicspotmanage/scenicspotmanage",
+        "iconPath": "static/shouye.png",
+        "selectedIconPath": "static/shouye.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/scenicspotview/scenicspotview",
+        "iconPath": "static/tuijian.png",
+        "selectedIconPath": "static/tuijian.png",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/htmenu/htmenu",
+        "iconPath": "static/个人.png",
+        "selectedIconPath": "static/个人.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
